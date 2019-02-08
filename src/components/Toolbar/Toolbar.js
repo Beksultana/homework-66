@@ -1,14 +1,16 @@
 import React from 'react';
 import {Container, Nav, Navbar, NavbarBrand, NavItem, NavLink} from "reactstrap";
 import './Toolbar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Toolbar = () => {
     return (
         <header className="Toolbar" >
             <Container>
-                <Navbar color="light" light expand="md">
+                <Navbar dark light expand="md">
                     <NavbarBrand href="/">Cars</NavbarBrand>
-                    <Nav className="ml-auto" navbar>
+                    <Nav className="ml-auto Nav" navbar>
                         <NavItem>
                             <NavLink href="/components/">Components</NavLink>
                         </NavItem>

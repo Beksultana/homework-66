@@ -10,7 +10,7 @@
     color: #fff;
 }
 
-.Toolbar .Container  nav {
+.Toolbar .Container  .Nav {
     display: flex;
     justify-content: flex-end;
     margin: 0;
