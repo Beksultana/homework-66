@@ -1,7 +1,8 @@
 import React from 'react';
-import {Container, Nav, Navbar, NavbarBrand, NavItem, NavLink} from "reactstrap";
+import {Container, Nav, Navbar, NavbarBrand, NavItem} from "reactstrap";
 import './Toolbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {NavLink} from "react-router-dom";
 
 
 const Toolbar = () => {
@@ -12,10 +13,10 @@ const Toolbar = () => {
                     <NavbarBrand href="/">Cars</NavbarBrand>
                     <Nav className="ml-auto Nav" navbar>
                         <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
+                            <NavLink  to="/home" exact >Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            <NavLink to="/git" exact >Git</NavLink>
                         </NavItem>
                     </Nav>
                 </Navbar>

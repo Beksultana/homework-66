@@ -11,7 +11,8 @@ class App extends Component {
           <Layout>
               <Container>
                   <Switch>
-                      <Route path="/" exact render={() => <h1>Home</h1>}/>
+                      <Route path="/home" exact render={() => <h1>Home</h1>}/>
+                      <Route path="/git" render={() => <h1>Git</h1>}/>
                   </Switch>
               </Container>
           </Layout>
